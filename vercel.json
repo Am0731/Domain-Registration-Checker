@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "G:\\Code\\Gefei\\server.js",
+      "src": "server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/queryDomain",
-      "dest": "G:\\Code\\Gefei\\server.js"
+      "dest": "server.js"
     },
     {
       "src": "/(.*)",
