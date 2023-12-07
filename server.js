@@ -1,10 +1,13 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const cors = require('cors'); // 导入 cors 中间件
 const app = express();
 const port = 3000;
 
 app.use(express.json());
 app.use(express.static('.'));
+app.use(cors()); // 使用 cors 中间件
+
 
 app.post('/queryDomain', async (req, res) => {
     const { domainName } = req.body;
